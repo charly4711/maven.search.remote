@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Localizing-Bundle: ro/emilianbold/modules/ro/emilianbold/modules/maven/search/remote/Bundle.properties
+
