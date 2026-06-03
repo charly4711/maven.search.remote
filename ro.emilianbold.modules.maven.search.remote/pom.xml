@@ -13,29 +13,18 @@
                 <version>14.5</version>
                 <extensions>true</extensions>
                 <configuration>
+                    <codeNameBase>ro.emilianbold.modules.maven.search.remote</codeNameBase>
                     <useOSGiDependencies>false</useOSGiDependencies>
-                    <moduleDependencies>
-                        <dependency>
-                            <id>org.netbeans.modules:org-netbeans-modules-maven</id>
-                            <type>impl</type>
-                            <!--<explicitValue>org.netbeans.modules.maven/2 = 1</explicitValue>-->
-                        </dependency>
-                        <dependency>
-                            <id>org.netbeans.modules:org-netbeans-modules-maven-indexer</id>
-                            <type>impl</type>
-                            <!--<explicitValue>org.netbeans.modules.maven/2 = 1</explicitValue>-->
-                        </dependency>
-                    </moduleDependencies>
                     <!--<verifyRuntime>warn</verifyRuntime>-->                    
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.15.0</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <release>17</release>
+                    <proc>full</proc>
                 </configuration>
             </plugin>
             <plugin>
@@ -54,11 +43,6 @@
         <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-netbeans-api-annotations-common</artifactId>
-            <version>RELEASE160</version>
-        </dependency>
-        <dependency>
-            <groupId>org.netbeans.modules</groupId>
-            <artifactId>org-netbeans-modules-maven</artifactId>
             <version>RELEASE160</version>
         </dependency>
         <dependency>

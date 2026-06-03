@@ -35,7 +35,9 @@ import org.netbeans.modules.maven.indexer.spi.ResultImplementation;
 public class Utils {
 
     public static boolean isCentral(RepositoryInfo r) {
-	boolean handle = "central".equals(r.getId()) && !r.isLocal() && !r.isMirror() && (r.getRepositoryUrl() != null && r.getRepositoryUrl().contains("repo.maven.apache.org")); //NOI18N
+	boolean handle = "central".equals(r.getId())
+                && !r.isLocal() && !r.isMirror() 
+                && (r.getRepositoryUrl() != null && r.getRepositoryUrl().contains("repo.maven.apache.org")); //NOI18N
 
 	return handle;
     }
