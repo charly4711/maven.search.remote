@@ -6,3 +6,9 @@ Download plugin from your IDE's Plugin Portal or manually from http://plugins.ne
 
 [JAXEnter article about the plugin](https://jaxenter.com/netbeans/keep-netbeans-nimble-with-maven-remote-search)
 
+Notes:
+ * To use it, disable Maven indexing in NB preferences, then
+   * have Maven central as a direct repo, i. e. no mirrors
+   * When searching the repo from the Services tab, make sure to check the name checkbox
+   * When adding a Maven dependency, use as you would normally
+
